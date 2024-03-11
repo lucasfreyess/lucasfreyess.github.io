@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>mi primera pagina web!!!</title>
+
+    <!-- lo siguiente es external css !!! -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">
+        hi... this is my first webpage ^//^
+    </h1>
+
+    <a style="text-align: center" href="https://cdn.discordapp.com/attachments/927134558493757474/1118400899677683772/caption.jpg?ex=65cc4581&is=65b9d081&hm=2691255a1bfac85da4ff780304ef4b5ba48324360dcdad34cf9fef49cdbbd60e&" target="_blank">
+        <img src="images/jupijej.gif" alt="jupijej.gif" style="width:42px;height:42px;">
+    </a><br>
+
+    <h2>Name</h2>
+
+    <p>Lucas Francisco Reyes Salazar</p>
+
+    <h2>Major</h2>
+
+    <p>Ingeniería Civil en Ciencias de la Computación</p>
+
+    <h2>Year Of University Enrollment</h2>
+
+    <p>2021</p>
+
+    <h2>Link to your Github</h2>
+
+    <a href="https://github.com/lucasfreyess">
+        <p>click to see my github page!!</p>
+    </a>
+
+    <h2>Personal Summary</h2>
+
+    <p>Born in Iquique, I moved to Santiago at age 10. Then, I enrolled to Colegio San Pedro Nolasco. I graduated High School in 2020, and then enrolled to Universidad de los Andes in 2021, from which I am still in undergrad.</p>
+
+    <p>My family's pretty big, and I've got a lovely dog named Koda!</p>
+    
+    <h2>The following is a table, which shows the skills I possess, and my level of expertise at them.</h2>
+
+    <table>
+        <tr class="tr">
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+
+        <tr>
+          <td>Python</td>
+          <td>Intermediate</td>
+        </tr>
+
+        <tr class="tr">
+          <td>JavaScript</td>
+          <td>Basic</td>
+        </tr>
+
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Basic</td>
+        </tr>
+
+        <tr class="tr">
+          <td>Git</td>
+          <td>Basic</td>
+        </tr>
+
+        <tr>
+          <td>C/C++</td>
+          <td>Intermediate</td>
+        </tr>
+
+        <tr class="tr">
+          <td>Excel</td>
+          <td>Basic</td>
+        </tr>
+
+        <tr>
+          <td>SQL</td>
+          <td>Intermediate</td>
+        </tr>
+
+        <tr class="tr">
+          <td>Ruby</td>
+          <td>None</td>
+        </tr>
+
+        <tr>
+            <td>English</td>
+            <td>Advanced</td>
+        </tr>
+
+        <tr class="tr">
+            <td>Spanish</td>
+            <td>Native</td>
+        </tr>
+
+    </table>
+
+    <h2>The following is the input section. Please, provide your email in case I need to contact you (don't actually put your email; this is just an example).</h2>
+
+    <label for="email">email:</label>
+    <input type="text" id="email" name="email"><br><br>
+
+    <button id="boton" onclick="" target="_blank">
+        Submit
+    </button><br>
+
+    <div id="new_text">
+
+    </div>
+
+    <script>
+        var element = document.getElementById("boton");
+
+        element.addEventListener("click",
+            function(){
+                var new_text = document.getElementById("new_text");
+
+                var newElement = document.createElement('h1');
+                newElement.textContent = "Thanks for submitting your email! You typed:"
+                new_text.appendChild(newElement);
+
+                var email = document.getElementById("email");
+                new_text.appendChild(email);
+            }
+        )
+    </script>
+
+</body>
+
+</html>
