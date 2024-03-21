@@ -4,60 +4,196 @@
 
 <head>
     <title>mi primera pagina web!!!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- lo siguiente es external css !!! -->
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
 </head>
 
-<body>
+<body style="background-color:paleturquoise ;">
 
-    <h1 style="text-align:center;">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <div class="container-fluid">
+
+    <nav style="color: palevioletred;" class="navbar bg-primary">
+
+      <div class="container-fluid">
+        
+        <a class="navbar-brand" href="#">
+          <img src="images/jupijej.gif" alt="jupijej.gif" style="width:42px;height:42px;">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#casa">
+                casita..
+              </a>
+            </li>
+          
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                menu
+              </a>
+
+              <ul class="dropdown-menu">
+
+                <li>
+                  <a class="dropdown-item" href="#skillTable">
+                    Skill Table
+                  </a>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+                
+                <li>
+                  <a class="dropdown-item" href="#emailSubmission">
+                    Email Submission
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">
+                Disabled
+              </a>
+            </li>
+            -->
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              buscar...
+            </button>
+          </form> 
+        </div>
+      </div>
+    </nav>
+
+    <br>
+
+    <div class="alert alert-warning" role="alert">
+      warning..... this website's pretty cool..... be afraid,..
+    </div>
+
+    <h1 id="casa" style="text-align:center; color:magenta">
         hi... this is my first webpage ^//^
     </h1>
 
-    <a style="text-align: center" href="https://cdn.discordapp.com/attachments/927134558493757474/1118400899677683772/caption.jpg?ex=65cc4581&is=65b9d081&hm=2691255a1bfac85da4ff780304ef4b5ba48324360dcdad34cf9fef49cdbbd60e&" target="_blank">
-        <img src="images/jupijej.gif" alt="jupijej.gif" style="width:42px;height:42px;">
-    </a><br>
-
-    <h2>Name</h2>
-
-    <p>Lucas Francisco Reyes Salazar</p>
-
-    <h2>Major</h2>
-
-    <p>Ingeniería Civil en Ciencias de la Computación</p>
-
-    <h2>Year Of University Enrollment</h2>
-
-    <p>2021</p>
-
-    <h2>Link to your Github</h2>
-
-    <a href="https://github.com/lucasfreyess">
-        <p>click to see my github page!!</p>
-    </a>
-
-    <h2>Personal Summary</h2>
-
-    <p>Born in Iquique, I moved to Santiago at age 10. Then, I enrolled to Colegio San Pedro Nolasco. I graduated High School in 2020, and then enrolled to Universidad de los Andes in 2021, from which I am still in undergrad.</p>
-
-    <p>My family's pretty big, and I've got a lovely dog named Koda!</p>
+    <div class="container text-center">
     
-    <h2>The following is a table, which shows the skills I possess, and my level of expertise at them.</h2>
+      <div class="row align-items-start">
 
-    <table>
-        <tr class="tr">
+        <div class="col-2">
+          <h2 style="font-family: cursive; color:crimson">Name</h2>
+        </div>
+
+        <div class="col-4">
+          <h2 style="font-family: cursive; color:crimson">Major</h2>
+        </div>
+
+        <div class="col-6">
+          <h2 style="font-family: cursive; color:crimson">Year Of University Enrollment</h2>
+        </div>
+
+      </div>
+
+      <div class="row align-items-center">
+
+        <div class="col-2" style="font-family:monospace">
+          <p>Lucas Francisco Reyes Salazar</p>
+        </div>   
+        
+        <div class="col-4" style="font-family:monospace">
+          <p>Ingeniería Civil en Ciencias de la Computación</p>
+        </div> 
+
+        <div class="col-6" style="font-family:monospace; font-size: 200%;">
+          <p>2021</p>
+        </div> 
+
+      </div>
+
+      <br>
+
+    </div>
+
+    <div class="container text-center">
+      
+      <div class="row align-items-start">
+
+          <div class="col-2">
+            <h2 style="font-family: cursive; color:crimson">
+              Github Link
+            </h2>
+          </div>
+
+          <div class="col-10">
+            <h2 style="font-family: cursive; color:crimson">
+              Personal Summary
+            </h2>
+          </div>
+
+      </div>
+
+      <div class="row align-items-center">
+
+        <div class="col-2">
+          <a href="https://github.com/lucasfreyess">
+            <p>click to see my github page!!</p>
+          </a>
+        </div>
+
+        <div class="col-10">
+          <p style="font-family:monospace">
+            Born in Iquique, I moved to Santiago at age 10. Then, I enrolled to Colegio San Pedro Nolasco. I graduated High School in 2020, and then enrolled to Universidad de los Andes in 2021, from which I am still in undergrad.
+          </p>
+
+          <p style="font-family:monospace">
+            My family's pretty big, and I've got a lovely dog named Koda!
+          </p>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <br>
+
+    <h2 id="skillTable" style="font-family: cursive; color:crimson">
+      The following is a table, which shows the skills I possess, and my level of expertise at them.
+    </h2><br>
+
+    <table class="table table-striped table-dark">
+
+      <thead>
+        <tr>
           <th>Skill</th>
-          <th>Level</th>
-        </tr>
+          <th>Level</th>      
+        </tr>      
+      </thead>
+
+      <tbody>
 
         <tr>
           <td>Python</td>
           <td>Intermediate</td>
         </tr>
 
-        <tr class="tr">
+        <tr>
           <td>JavaScript</td>
           <td>Basic</td>
         </tr>
@@ -67,7 +203,7 @@
           <td>Basic</td>
         </tr>
 
-        <tr class="tr">
+        <tr>
           <td>Git</td>
           <td>Basic</td>
         </tr>
@@ -77,7 +213,7 @@
           <td>Intermediate</td>
         </tr>
 
-        <tr class="tr">
+        <tr>
           <td>Excel</td>
           <td>Basic</td>
         </tr>
@@ -87,7 +223,7 @@
           <td>Intermediate</td>
         </tr>
 
-        <tr class="tr">
+        <tr>
           <td>Ruby</td>
           <td>None</td>
         </tr>
@@ -97,25 +233,31 @@
             <td>Advanced</td>
         </tr>
 
-        <tr class="tr">
+        <tr>
             <td>Spanish</td>
             <td>Native</td>
         </tr>
-
+      </tbody>
     </table>
 
-    <h2>The following is the input section. Please, provide your email in case I need to contact you (don't actually put your email; this is just an example).</h2>
+    <br>
+
+    <h2 id="emailSubmission" style="font-family: cursive; color:crimson">
+      The following is the input section. Please, provide your email in case I need to contact you (don't actually put your email; this is just an example).
+    </h2>
 
     <label for="email">email:</label>
     <input type="text" id="email" name="email"><br><br>
 
-    <button id="boton" onclick="" target="_blank">
-        Submit
+    <button id="boton" class="btn btn-outline-danger btn-lg" type="submit" onclick="" target="_blank">
+        Submit (This is a bootstrap button!)
     </button><br>
 
     <div id="new_text">
 
     </div>
+
+    <br><br>
 
     <script>
         var element = document.getElementById("boton");
@@ -134,6 +276,7 @@
         )
     </script>
 
+  </div>
 </body>
 
 </html>
